@@ -1,0 +1,279 @@
+ESSENCIAL:
+
+1. Esp32 funcionando como uma luz, encima das portas e onde estiver os botões ao
+lado do leito, ajudando também a monitorar os enfermeiros, pois ao ser ligado irá
+começar a cronometrar o atendimento da chamada, e ao ser desligado irá finalizar a
+contagem do cronômetro. Ao utilizar esse meio retiraremos a necessidade de usos
+de cabos e fios no hospital, ajudando a cortar custos desnecessários. Esp32 é
+programado para ter uma conversação com o desenvolvimento web, ajudando no
+nosso sistema como um todo.
+
+4. O paciente terá ao seu lado o botão de emergência, e acima dele haverá duas luzes:
+Uma vermelha e outra verde, a vermelha indicará para o paciente que ao pressionar
+o botão ele obteve o chamado, e quando o enfermeiro receber a chamada ele
+poderá apertar uma tecla que ao ser pressionada acenderá no quarto do paciente a
+luz verde, indicando que seu chamado foi ouvido e ele será atendido em breve por
+um profissional. MELHORAR
+
+8. Sistema de chamada automático: Os dados vitais do paciente estaria sendo vigiado
+pelo nosso sistema, ao aparecer algo diferente e extremamente diferente para a
+ficha do paciente acionaria o alarme e o display no posto de enfermagem mostraria
+o quarto e leito que estaria ocorrendo a emergência, como em um sistema de
+chamada acionado pelo acompanhante ou paciente. Isso seria monitorado e
+programado para o que seria emergente e diferente em cada caso dos pacientes. 
+
+12. Implementação do prontuário médico no display do enfermeiro(a) de acordo com os
+gráficos diários, monstrar as informações úteis para o enfermeiro economizando tempo,
+nesse prontuário pode exibir o que com frequência acontece com o paciente, por
+exemplo o que ele é alergico.  DO POSTO E DO LEITO
+
+
+13. TABLET OU TOTEM, três botoes para ranqueamento, a tela mostra o desenho das três
+utilidades e uma abertura para ler o QRcode do cracha do enfermeiro, ao ler o o codigo do cracha 
+o prontuario é liberado p o enfermeiro ler. 
+--(6. Ranqueamento de emergência: Ao lado do leito em um lugar orientado pela equipe
+médica, será posto três botões onde o paciente pode apertar para três necessidades
+diferentes: Uso pessoal (necessidade básicas, dúvidas, fome); remédio (somente
+para pedir não para especificar qual remédio); emergência. Ao ser pressionado um
+desses botões acionará o alarme no posto de enfermagem, isso ajudaria em casos
+que vários pacientes apertassem o botão juntos, e ajudaria a entender qual
+atendimento priorizar em casos de emergência. Sendo obrigatória o atendimento em
+todos os casos, pois o paciente pode apertar botões errados por engano própria. O
+uso dos três botões seria explicado para o acompanhante do paciente e para o
+próprio paciente que não estiver debilitado.  MELHORAR)
+
+
+
+INTERESSANTE:
+
+3. Monitoramento da chamada de enfermagem: Ao acontecer a chamada o nosso
+sistema irá começar a cronometrar o atendimento e quando o enfermeiro for no
+quarto do paciente e desligar a chamada será cronometrado e anotado no nosso
+sistema, indicando quanto tempo demora para o hospital acolher seus pacientes
+mais vulneráveis.
+
+15. Coleta da quantidade que cada botão foi apertado com geração de gráficos diários,
+semanais e mensais de pacientes que estão internados. Nesses gráficos terão a
+quantidade de chamadas feitas por cada paciente em cada sala e uma possível
+coisa a ser colocada é uma justificativa para entender o porque são realizados esses
+chamados e entender o padrão do paciente para ver suas necessidades.
+
+16. Colocar o horário do remedio do paciente no sistema mostrando em uma tela quando tal paciente precisa tomar o medicamento. PACOTE OURO
+
+2. Pulseira para enfermeiros e técnicos de enfermagem que ao acontecer a chamada
+enviará uma mensagem com o leito e quarto onde a emergência está acontecendo,
+influenciando diretamente na rapidez e agilidade do atendimento. PACOTE OURO
+
+
+
+DESNECESSÁRIO:
+9. Analistas de sistema: Teríamos um analista que iria monitorar os sistemas das
+empresas para que caso ocorra um erro no nosso sistema de emergência iria
+mobilizar uma equipe de suporte da empresa FaithSec para consertar o erro mais
+rápido possível, evitando transtorno e erros irreversíveis.
+
+14. Botão móvel, é literalmente uma tag com localização que quando apertada acende
+uma luz e indica onde o paciente está no hospital no posto de enfermagem.
+
+7. Auxílio para o acompanhante: Botão branco onde o paciente não alcance, somente
+o acompanhante. Ao acionar o botão ele pediria um auxílio de um técnico em
+enfermagem ou enfermeiro, para que ele possa sair (por diversas razões, como ir
+fazer suas necessidades pessoais ou trocar para outro acompanhante em casos
+específicos onde pode haver a troca), e o enfermeiro ficaria supervisionando o
+paciente que em casos especiais não pode ficar sem auxílio.
+
+5. Haverá tablets pelos corredores em lugares pré estabelecidos pela instituição
+hospitalar onde mostrará na tela o quarto e leito de emergência, ajudando a equipe
+hospitalar a encontrar a emergência.
+
+
+
+raspberry pi-- PARA FAZER TOTEM
+
+
+
+
+DESIGN BRIEFING:
+
+DESAFIO- sistema de chamada de emergencia, de baixo custo, com inovações nas chamadas; 
+
+
+ESCOPO E RESTRIÇÕES- não podemos vulnerabilizar o paciente
+
+O QUE JÁ SABEMOS- nosso sistema tem a comunicação avançada entre pac e enf, reduz gastos de cabeamento do hospital, aumenta as informações dos pacientes melhorando a estrutura/atendimento do hospital, aumenta a segurança do paciente em casos de emergencia, facil acesso de informações do pacientes de uma maneira rapida por causa do totem no leito dele, 
+
+RESULTADOS ESPERADOS-redução de custos, melhora na comunicação entre equipe de enfermagem e paciente, avanço na tecnologia hospitalar, diminuição no alarde do psicologico do paciente diminuindo a sensação de estresse/desespero usando uma resposta para o paciente assim que ele acionar o alarme, 
+
+QUESTÕES EM ABERTO- tablets nos corredores, pulseiras com enfermeiros, quais botoes utilizar no leito, 
+
+MÉTRICAS-
+
+BENEFICIÁRIO-
+
+IMAGINAR UMA PERSONA QUE VAI GERENCIAR A EMPRESA FAITHSEC, DE ACORDO COM NOSSA DEMANDA 
+
+
+STEAKHOLDER
+--PARTES ENVOLVIDAS 
+
+INTERNOS TRABALHAR DIRETAMENTE: criação do sistemas, da solução, o desenvolverdor
+EXTERNOS: pacientes, setor de enf inteir, ser bem especifico
+
+
+
+FUNÇÕES
+
+BOTAO DE VALORES NO ORÇAMENTO
+VER VALORES, função que mostra os valores, muda visual
+
+
+ORÇAMENTO PERSONALIZADO
+TODOS OS CAMPOS OBRIGATÓRIOS 
+TABLET, LEITO, QUANTOS, ENF, sempre numero ENDEREÇO COMPLETO:NUMERO(campo que é obrigatorio mas o cep não preenche), RUA, BAIRRO, CIDADE, CEP(função digito verificador), se possivel completar os outros campos automaticamente pelo CEP, 
+ENVIAR,função que varre e verifica se os outros campos estão corretamente preenchidos
+
+
+SUPORTE//ASSISTÊNCIA
+NOME, função: obrigatório
+CNPJ, função que valida o cnpj como existente ou não
+ESTADO, função: obrigatório
+TELEFONE, se está preenchido todos os numeros e formatar o campo, limitar quantidade
+MENSAGEM, função delimita quant de caracter
+ENVIAR, função que varre e verifica se os outros campos estão corretamente preenchidos
+
+
+
+
+
+
+<CANVAS>
+
+<<SEGMENTAÇÃO DOS CLIENTES
+°colocar em hierarquia
+para quem estamos criando valor?
+quem seria nosso clientes mais importantes/principais?
+clientes primário(publico principal) e secundário (pode acabar atingindo)
+
+*
+instituições hospitalares que apresentam sistema de chamada;
+redes hospitalares publicas;
+redes hospitalares privadas;
+postos de saúde, ubs
+*
+
+tipo de consumidor: 
+SEGMENTADO: UM MESMO MERCADO QUE SE DECIDE REPARTIR E USAR ESTRATEGIA PARA DIFERENTES TIPOS DE GRUPOS
+
+<<PROPOSTA DE VALOR
+caracteristicas do produto, novidade#, performance#, design#, customização, usabilidade#
+acessibilidade#
+intangiveis, mensurável(mas não só coisas que não pode tocar)-projetos futuros
+valor financeiros, custo#, risco#(segurança!!)
+
+<<CANAIS
+COMO A EMPRESA ATINGE E SE COMUNICA COM SEUS SEGMENTOS DE CLIENTES PARA OFERECER A PROPOSIÇÃO DE VALOR.
+CANAIS são pontos de contato que desempenham um papel importante na experiência do cliente, como: entrega dos valores, fornecer suporte pós compra, ajudar a avaliar valores, sensibilizar sobre serviço serviço e produto. (experiencia pré compra, durante compra e pós compra).
+
+
+Tomar conhecimento-- como nos conhece: através de site principal e rede sociais(insta). 
+Avaliação-- como facilitar a avaliação da proposta de valor: site com area para avaliação(form)
+Compra-- como permitir a compra de um produto especifico: solicitar orç personalizado(PRECISA), fechamento presencial solicitação de orç pode ser pelo site, entrando em reunião
+Entrega-- como entregar a proposta de valor para o cliente: através do nosso suporte e do funcionamento do sistema
+Pós-venda-- como auxiliar o consumidor depois de sua compra: suporte extremamente bem sucedido no site principal
+
+
+<<RELACIONAMENTO COM CLIENTE
+A EMPRESA DEVE ESCLARECER O TIPO DE RELAÇÃO QUE PRETENDE ESTABELECER COM CADA SEGMENTO DE CLIENTE QUE PODE VARIAR DE RELACIONAMENTO PESSOAL PARA AUTOMATIZADO
+aquisição de cliente--- como ter clientes
+retenção de clientes-- como manter clientes
+impulsionar clientes-- como melhorar o relacionamento com cliente
+
+<<FONTE DE RECEITAS
+O QUE GERA DINHEIRO
+NOSSO SISTEMA CONVERTE O QUE EM DINHEIRO?
+
+Quantos os nossos clienyes estão realmente estão dispostos a pagar?
+Quanto eles pagam atualmente?
+Como eles pagam atualmente?
+Como é que eles preferem pagar?
+Quanto é que cada fonte de receita contribui para as receitas globais? //jeito que ganhamos dinheiro: instalar, manut e atualizar
+
+São: 
+Anuncios
+Taxa de uso // paga quanto por usar 
+Licenciamento
+Taxa de assinatura // exclusidade que os usuarios tem por pagar mais, membro de youtube
+Taxa de corretagem
+Vnedas de recursos
+Emprestimo, aluguel ou leasing
+
+
+<<RECURSOS CHAVES
+FINANCEIRA: QUEM É O DONO DA EMPRESA QUE VAMOS VENDER 
+
+
+<<ATIVIDADE CHAVES
+Quais são as principais atividades que:
+Nossa proposta de valor exige?
+Nossos canais de distribuição exigem?
+Relacionamento com o cliente exige?
+Fontes de receita exigem?
+
+<<PARCERIAS CHAVE
+as parceriais podem ser classificadas em:
+aquisição de recursos e atividades particulares
+Redução do risco e da incerteza
+otimização e economia de escala
+
+<<ESTRUTURA DE CUSTOS
+BLOCO DESCREVE OS CUSTOS + IMPORTANTES PARA OPERAÇÃO DO MODELO DE NEGOCIO DESDE A CRIAÇÃO E ENTREGA DE VALOR DE MANUT DO RELACIONAMENTO COM OS CLIENTES ATÉ A GERAÇÃO DE RECEITA
+quantas pessoas o sistema suporta ao mesmo tempo, hospedagem?
+
+
+
+
+
+
+|1 |_1| 2|_3|3 |
+|_ | _|_ |_ |_ |
+|   4	 |  4  |
+
+1- como
+2- o que
+3- quem
+4- quanto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
